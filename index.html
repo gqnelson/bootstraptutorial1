@@ -9,6 +9,7 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
+
 <!--Navbar-->
 <div class="navbar navbar-inverse navbar-static-top">
     <div class="container">
@@ -109,23 +110,38 @@
 <div class="modal fade" id="contact" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <h4>Contact Tech Site</h4>
-            </div>
-            <div class="modal-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="modal-footer">
-                <a class="btn btn-default" data-dismiss="modal">Ok</a>
-                <a class="btn btn-primary" data-dismiss="modal">Close</a>
-            </div>
+            <form class="form-horizontal">
+                <div class="modal-header">
+                    <h4>Contact Tech Site</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="contact-name">Name</label>
+
+                        <div class="col-lg-10">
+                            <input class="form-control" id="contact-name" placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="contact-email">Email</label>
+
+                        <div class="col-lg-10">
+                            <input class="form-control" id="contact-email" type="email" placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="contact-message">Message</label>
+
+                        <div class="col-lg-10">
+                            <textarea class="form-control" id="contact-message" rows="8"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Canel</a>
+                    <button class="btn btn-primary" type="submit">Send Message</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
